@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import b1 from "../../assests/b1.svg";
-import b2 from "../../assests/b2.svg";
-import b3 from "../../assests/b3.svg";
+import b1 from "../../public/assests/b1.svg";
+import b2 from "../../public/assests/b2.svg";
+import b3 from "../../public/assests/b3.svg";
 const page = () => {
   return (
     <div className="w-[100vw] tracking-wide">

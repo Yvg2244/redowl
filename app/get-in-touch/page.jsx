@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import redBg from "../../assests/redBg.svg";
-import logo from "../../assests/logo_final.svg";
-import Atsign from "../../assests/Atsign.png";
-import Map from "../../assests/Map.svg";
-import Ringer from "../../assests/Ringer.svg";
+import redBg from "../../public/assests/redBg.svg";
+import logo from "../../public/assests/logo.svg";
+import Atsign from "../../public/assests/Atsign.png";
+import Map from "../../public/assests/Map.svg";
+import Ringer from "../../public/assests/Ringer.svg";
 const page = () => {
   return (
     <div className="w-[100vw] z h-[80vh] grid grid-cols-12 tracking-wide">

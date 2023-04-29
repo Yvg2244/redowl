@@ -1,6 +1,6 @@
 import React from "react";
 import "@/styles/globals.css";
-import logo from "../assests/logo_final.svg";
+import logo from "../public/assests/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 const Navbar = () => {

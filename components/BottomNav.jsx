@@ -1,6 +1,7 @@
 import React from "react";
 import "@/styles/globals.css";
-import footerLogo from "../assests/footerLogo.svg";
+import footerLogo from "../public/assests/footerLogo.svg";
+
 import Image from "next/image";
 const BottomNav = () => {
   return (
