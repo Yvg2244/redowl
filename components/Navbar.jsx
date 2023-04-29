@@ -6,8 +6,8 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="sticky top-0">
-      <header className="sticky top-0 bg-white w-[100vw] tracking-wide items-center justify-between flex gap-4 h-[auto] py-2 p-4">
-        <div className="flex gap-2 items-center ">
+      <header className="bg-white w-[100vw] tracking-wide items-center flex flex-col justify-between md:flex-row lg:justify-between lg:gap-4 h-[100vh] md:h-[auto] lg:py-2 lg:p-4">
+        <div className="flex flex-col md:flex-row  gap-2 items-center ">
           <Image
             src={logo}
             height={75}
@@ -19,14 +19,14 @@ const Navbar = () => {
             Red<span className="text-secoundry_red">Owl</span>
           </p>
         </div>
-        <ul className="flex text-[15px] font-bold gap-4">
+        <ul className="flex flex-col md:flex-row text-[15px] font-bold gap-4">
           <li>
             <Link href={"/"} className="border-none px-4 pointer-cursor">
             Home
             </Link>
           </li>
           <li>
-            <Link href={"/page/services"} className="border-none px-4 pointer-cursor">
+            <Link href="#services" className="border-none px-4 pointer-cursor">
             Services
             </Link>
           </li>

@@ -38,9 +38,9 @@ const page = () => {
         <input type="text" placeholder="FirstName" name="" id="" />
         <input type="text" placeholder="LastName" name="" id="" />
         <label className="font-semibold col-span-2">Email</label>
-        <input type="email" placeholder="Email" name="" id="" />
+        <input className="col-span-2" type="email" placeholder="Email" name="" id="" />
         <label className="font-semibold col-span-2">Your Message</label>
-        <input type="textarea" cols="60" rows="5"  placeholder="Message" name="" id="" />
+        <input className="col-span-2" type="textarea" cols="60" rows="5"  placeholder="Message" name="" id="" />
         <button className="bg-secoundry_red font-bold text-white col-span-2 p-4 border-none rounded-md">Get In Touch</button>
       </section>
     </div>
