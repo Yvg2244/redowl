@@ -20,7 +20,7 @@ const page = () => {
         <div className="flex flex-col w-[20rem] gap-4">
           <h1 className="font-extrabold text-[48px]">School ERP System</h1>
           <p className="font-semibold">
-            Student's 360º spectrum through an integrated ERP
+            Student&apos;s 360º spectrum through an integrated ERP
           </p>
           <button className="w-[10rem] m-0 p-[8px] font-semibold border-none rounded-md bg-secoundry_red text-white">
             Get in Touch
@@ -58,7 +58,7 @@ const page = () => {
 
       <section className="grid grid-col-2 col-span-2 h-[auto] my-8 mb-[8rem] gap-8 pl-[4rem] pr-[4rem]  ">
         <h2 className="font-extrabold col-span-2 w-[55vw] text-[36px]">
-          Don't Let Administration Activities Interfere with Education
+          Don&apos;t Let Administration Activities Interfere with Education
         </h2>
         <div className="col-span-2 justify-between flex w-full">
           <div className="mt-4 min-h-[20rem] min-w-[40rem] flex flex-col leading-tighter justify-center rounded-r-[150px] px-[4rem] bg-primary_red text-white">
@@ -115,7 +115,7 @@ const page = () => {
         </h2>
         <h4 className="col-span-3 text-[16px] mb-8 font-semibold">
           RedOwl SMS helps to instantly communicate with parents about their
-          ward's attendance, result, fees & notices. Schools can also schedule
+          ward&apos;s attendance, result, fees & notices. Schools can also schedule
           single/bulk SMS. RedOwl SMS is a reliable & cost-effective solution
           with pre- defined & custom template facility
         </h4>
