@@ -28,7 +28,7 @@ const page = () => {
         </div>
         <Image src={MainImg} alt="RedOwlSchools display Image" />
       </main>
-      <section className="grid content-center gap-5 grid-col-2 col-span-2 h-[100vh] my-4 pl-[4rem] pr-[4rem]">
+      <section id="services"className="grid content-center gap-5 grid-col-2 col-span-2 h-[100vh] my-4 pl-[4rem] pr-[4rem]">
         <h2 className="font-extrabold col-span-2 w-[55vw] text-[36px]">
           Providing Best Services To Top Educational Institutes
         </h2>
