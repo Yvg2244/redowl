@@ -18,21 +18,24 @@ import { useCallback } from "react";
 import Footer from "../components/BottomNav";
 import BottomNav from "../components/BottomNav";
 import Navbar from "../components/Navbar";
+import { useStateValue } from "./context/store";
 const page = () => {
-  const [showNav, setShowNav] = useState(false);
-
+  const [{showNav},dispatch]=useStateValue()
+  const handleClick=()=>{
+    dispatch({
+      type:"SET_NAV",
+      showNav:!showNav
+    })
+  }
   return (
     <>
-      {showNav&&<Navbar/>}
+      <Navbar/>
       <div className="w-[100vw] h-auto tracking-wider  grid grid-cols-2">
         <button
-          className="font-extrabold w-[5rem] cursor-pointer border-none md:hidden absolute right-0"
-          onClick={() => {
-            console.log(showNav)
-            setShowNav(!showNav);
-          }}
+          className="font-extrabold z-10 w-[5rem] cursor-pointer border-none md:hidden absolute right-0"
+          onClick={handleClick}
         >
-          O
+          click me
         </button>
         <main className="flex relative col-span-2 h-[50vh] md:min-h-[80vh] items-center px-[1rem] md:pl-[4rem] md:pr-[4rem] justify-between">
           <div className="flex flex-col w-[28rem] md:w-[20rem] gap-4">

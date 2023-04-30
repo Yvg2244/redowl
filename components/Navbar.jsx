@@ -4,12 +4,21 @@ import "@/styles/globals.css";
 import logo from "../public/assests/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useStateValue } from "../app/context/store";
 const Navbar = () => {
-  const [showNav,setShowNav]=useState(false)
-  return (
+  const [{showNav},dispatch]=useStateValue()
+
+
+  return (       
     <>
     {showNav&&<nav className="sticky top-0 h-[100vh] py-2 z-10">
-      <button onClick={()=>{setShowNav(!showNav)}}>X</button>
+      <button className="text-right border-none font-extrabold w-full" onClick={()=>{
+        console.log(showNav)
+        dispatch({
+          type:"SET_NAV",
+          showNav:!showNav
+        })
+      }}>X</button>
       <header className="bg-white p-[1.5rem] w-[100vw] tracking-wide items-center flex flex-col justify-between md:flex-row lg:justify-between lg:gap-4 h-[100%] md:h-[auto] lg:py-2 lg:p-4">
         <div className="flex flex-col md:flex-row  gap-[2rem] items-center ">
           <Image
