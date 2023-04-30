@@ -14,7 +14,7 @@ import MobileNav from "../../components/MobileNav";
 import Navbar from "../../components/Navbar";
 const Touchpage = () => {
   const [show, setShow] = useState(false);
-  const wid = window.innerWidth;
+  const wid = window?.innerWidth;
   const handleClick = () => {
     setShow(!show);
   };

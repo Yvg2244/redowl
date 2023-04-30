@@ -22,7 +22,7 @@ import MobileNav from "../components/MobileNav";
 
 const Mainpage = () => {
   const [show, setShow] = useState(false);
-  const wid=window.innerWidth
+  const wid=window?.innerWidth
   const handleClick=()=>{
     setShow(!show)
   }
