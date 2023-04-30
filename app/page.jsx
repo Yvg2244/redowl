@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef,useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import network from "../public/assests/connect.png";
@@ -10,33 +10,37 @@ import cardIcon from "../public/assests/cardIcon.svg";
 import mobile from "../public/assests/mobile.svg";
 import gate from "../public/assests/gate.svg";
 import track from "../public/assests/track.svg";
-import school from "../public/assests/school.svg";
-import screen from "../public/assests/screen.svg";
+import menu from "../public/assests/menu.svg";
+import cancel from "../public/assests/cancel.svg";
 import mainBg from "../public/assests/mainBg.svg";
 import { useEffect } from "react";
 import { useCallback } from "react";
 import Footer from "../components/BottomNav";
 import BottomNav from "../components/BottomNav";
 import Navbar from "../components/Navbar";
-import { useStateValue } from "./context/store";
+import MobileNav from "../components/MobileNav";
+
 const page = () => {
-  const [{showNav},dispatch]=useStateValue()
+  const [show, setShow] = useState(false);
+  const wid=window.innerWidth
   const handleClick=()=>{
-    dispatch({
-      type:"SET_NAV",
-      showNav:!showNav
-    })
+    setShow(!show)
   }
   return (
     <>
-      <Navbar/>
+      {show&&<MobileNav handlingClick={handleClick}/>}
+      {wid>640?<Navbar/>:<></>}
       <div className="w-[100vw] h-auto tracking-wider  grid grid-cols-2">
-        <button
-          className="font-extrabold z-10 w-[5rem] cursor-pointer border-none md:hidden absolute right-0"
+        <div
+          className="absolute z-10 top-4 right-4 md:hidden"
           onClick={handleClick}
         >
-          click me
-        </button>
+          {show ? (
+            <Image height={45} width={45} src={cancel} />
+          ) : (
+            <Image height={45} width={45} src={menu} />
+          )}
+        </div>
         <main className="flex relative col-span-2 h-[50vh] md:min-h-[80vh] items-center px-[1rem] md:pl-[4rem] md:pr-[4rem] justify-between">
           <div className="flex flex-col w-[28rem] md:w-[20rem] gap-4">
             <h1 className="font-extrabold text-[27px] md:text-[48px] ">
