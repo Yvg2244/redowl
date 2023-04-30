@@ -12,7 +12,7 @@ import menu from "../../public/assests/menu.svg";
 import cancel from "../../public/assests/cancel.svg";
 import MobileNav from "../../components/MobileNav";
 import Navbar from "../../components/Navbar";
-const page = () => {
+const Touchpage = () => {
   const [show, setShow] = useState(false);
   const wid = window.innerWidth;
   const handleClick = () => {
@@ -103,4 +103,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Touchpage;

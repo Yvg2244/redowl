@@ -20,7 +20,7 @@ import BottomNav from "../components/BottomNav";
 import Navbar from "../components/Navbar";
 import MobileNav from "../components/MobileNav";
 
-const page = () => {
+const Mainpage = () => {
   const [show, setShow] = useState(false);
   const wid=window.innerWidth
   const handleClick=()=>{
@@ -205,4 +205,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Mainpage;
