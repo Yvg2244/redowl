@@ -6,9 +6,9 @@ import b3 from "../../public/assests/b3.svg";
 const page = () => {
   return (
     <div className="w-[100vw] tracking-wide">
-      <h2 className="w-[100vw] text-center font-bold text-[24px]">Blogs</h2>
-      <section className=" w-[100vw] min-h-[100vh] gap-8 justify-center flex ">
-        <div className="flex p-4 rounded-lg flex-col shadow-xl shadow-black-500/50 justify-center items-center h-[25rem] w-[12rem] gap-4">
+      <h2 className="w-[100vw] my-2 text-center font-bold text-[24px]">Blogs</h2>
+      <section className=" w-[100vw] min-h-[100vh] gap-8 justify-center items-center flex flex-col md:flex-row  ">
+        <div className="flex p-4 rounded-lg flex-col shadow-xl shadow-black-500/50 justify-center md:items-baseline items-center h-[auto] w-[20rem] md:w-[12rem] gap-4">
           <Image src={b1} alt="blog 1 image" />
           <h3 className="text-[16px] font-semibold">
             RedOwls new smart ID card’s full working{" "}
@@ -17,7 +17,7 @@ const page = () => {
             Read More
           </button>
         </div>
-        <div className="flex p-4 rounded-lg flex-col shadow-xl shadow-black-500/50 justify-center items-center h-[25rem] w-[12rem] gap-4">
+        <div className="flex p-4 rounded-lg flex-col shadow-xl shadow-black-500/50 justify-center md:items-baseline items-center h-[auto] w-[20rem] md:w-[12rem] gap-4">
           <Image src={b2} alt="blog 1 image" />
           <h3 className="text-[16px] font-semibold">
             Make your libraries smarter with redowl
@@ -26,7 +26,7 @@ const page = () => {
             Read More
           </button>
         </div>
-        <div className="flex p-4 rounded-lg flex-col shadow-xl shadow-black-500/50 justify-center items-center h-[25rem] w-[12rem] gap-4">
+        <div className="flex p-4 rounded-lg flex-col shadow-xl shadow-black-500/50 justify-center md:items-baseline items-center h-[auto] w-[20rem] md:w-[12rem] gap-4">
           <Image src={b3} alt="blog 1 image" />
           <h3 className="text-[16px] font-semibold">
             5 new Campuses made smarted by RedOwl{" "}

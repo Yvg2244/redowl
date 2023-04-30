@@ -1,13 +1,17 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import "@/styles/globals.css";
 import logo from "../public/assests/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 const Navbar = () => {
+  const [showNav,setShowNav]=useState(false)
   return (
-    <nav className="sticky top-0">
-      <header className="bg-white w-[100vw] tracking-wide items-center flex flex-col justify-between md:flex-row lg:justify-between lg:gap-4 h-[100vh] md:h-[auto] lg:py-2 lg:p-4">
-        <div className="flex flex-col md:flex-row  gap-2 items-center ">
+    <>
+    {showNav&&<nav className="sticky top-0 h-[100vh] py-2 z-10">
+      <button onClick={()=>{setShowNav(!showNav)}}>X</button>
+      <header className="bg-white p-[1.5rem] w-[100vw] tracking-wide items-center flex flex-col justify-between md:flex-row lg:justify-between lg:gap-4 h-[100%] md:h-[auto] lg:py-2 lg:p-4">
+        <div className="flex flex-col md:flex-row  gap-[2rem] items-center ">
           <Image
             src={logo}
             height={75}
@@ -19,7 +23,7 @@ const Navbar = () => {
             Red<span className="text-secoundry_red">Owl</span>
           </p>
         </div>
-        <ul className="flex flex-col md:flex-row text-[15px] font-bold gap-4">
+        <ul className="flex flex-col md:flex-row text-[20px] text-center md:text-[15px] font-bold gap-[2rem]">
           <li>
             <Link href={"/"} className="border-none px-4 pointer-cursor">
             Home
@@ -55,7 +59,8 @@ const Navbar = () => {
           </Link>
         </div>
       </header>
-    </nav>
+    </nav>}
+    </>
   );
 };
 

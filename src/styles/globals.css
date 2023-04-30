@@ -12,3 +12,9 @@ button {
   border: 1px solid black;
   margin: 5px 10px;
 }
+.mainSection{
+  background: red;
+  transform: perspective(10px) rotateX(1deg);
+  margin: 50px;
+
+}

@@ -5,10 +5,11 @@ import logo from "../../public/assests/logo.svg";
 import Atsign from "../../public/assests/Atsign.png";
 import Map from "../../public/assests/Map.svg";
 import Ringer from "../../public/assests/Ringer.svg";
+import BottomNav from "../../components/BottomNav";
 const page = () => {
   return (
-    <div className="w-[100vw] z h-[80vh] grid grid-cols-12 tracking-wide">
-      <section className="relative flex items-center justify-center col-span-4">
+    <div className="w-[100vw] h-[80vh] md:grid md:grid-cols-12 tracking-wide ">
+      <section className=" hidden relative md:flex items-center justify-center col-span-4">
         <Image src={redBg} layout="fill" objectFit="cover" />
         <div className="flex absolute w-[20rem] text-white justify-center items-center flex-col gap-2 ">
           <Image src={logo} height={100} alt={"logo"} />
@@ -32,17 +33,46 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="col-span-8 text-black grid grid-cols-2 items-start p-4 gap-4">
-        <label className="font-semibold">First Name</label>
-        <label className="font-semibold">Last Name</label>
-        <input type="text" placeholder="FirstName" name="" id="" />
-        <input type="text" placeholder="LastName" name="" id="" />
-        <label className="font-semibold col-span-2">Email</label>
-        <input className="col-span-2" type="email" placeholder="Email" name="" id="" />
-        <label className="font-semibold col-span-2">Your Message</label>
-        <input className="col-span-2" type="textarea" cols="60" rows="5"  placeholder="Message" name="" id="" />
-        <button className="bg-secoundry_red font-bold text-white col-span-2 p-4 border-none rounded-md">Get In Touch</button>
+      <section className="col-span-8 w-full text-black flex flex-col justify-start items-start gap-4 p-4  ">
+        <h2 className="font-bold text-center w-full text-[24px]">
+          Get in touch
+        </h2>
+        <div className="flex flex-col gap-8">
+          <div className="flex gap-2 flex-col">
+            <label className="font-semibold">First Name</label>
+            <input type="text" placeholder="FirstName" name="" id="" />
+          </div>
+          <div className="flex gap-2 flex-col">
+            <label className="font-semibold">Last Name</label>
+            <input type="text" placeholder="LastName" name="" id="" />
+          </div>
+        </div>
+        <div className="flex gap-2 flex-col">
+          <label className="font-semibold ">Email</label>
+          <input
+            className=""
+            type="email"
+            placeholder="Email"
+            name=""
+            id=""
+          />
+        </div>
+        <div className="flex gap-2 flex-col">
+          <label className="font-semibold ">Your Message</label>
+          <textarea
+            className="border-[1px]  w-[90vw] md:w-[30rem] border-black rounded-lg p-2"
+            type="textarea"
+            rows="4" cols="40"
+            placeholder="Message"
+            name=""
+            id=""
+          />
+        </div>
+        <button className="bg-secoundry_red font-semibold text-white m-0 py-2 px-8 border-none rounded-md">
+          Get In Touch
+        </button>
       </section>
+      <BottomNav/>
     </div>
   );
 };
