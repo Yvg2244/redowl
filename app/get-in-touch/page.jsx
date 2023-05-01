@@ -10,22 +10,18 @@ import Ringer from "../../public/assests/Ringer.svg";
 import BottomNav from "../../components/BottomNav";
 import menu from "../../public/assests/menu.svg";
 import cancel from "../../public/assests/cancel.svg";
-import MobileNav from "../../components/MobileNav";
+
 import Navbar from "../../components/Navbar";
 const Touchpage = () => {
   const [show, setShow] = useState(false);
-  const wid = window?.innerWidth;
-  const handleClick = () => {
-    setShow(!show);
-  };
+
   return (
-    <>
-      {show && <MobileNav handlingClick={handleClick} />}
-      {wid > 640 ? <Navbar /> : <></>}
+    
+     
       <div className="w-[100vw] h-[80vh] md:grid md:grid-cols-12 tracking-wide ">
         <div
           className="absolute z-10 top-4 right-4 md:hidden"
-          onClick={handleClick}
+        
         >
           {show ? (
             <Image height={45} width={45} src={cancel} />
@@ -99,7 +95,7 @@ const Touchpage = () => {
         </section>
         {/* <BottomNav /> */}
       </div>
-    </>
+    
   );
 };
 

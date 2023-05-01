@@ -7,26 +7,14 @@ import b2 from "../../public/assests/b2.svg";
 import b3 from "../../public/assests/b3.svg";
 import menu from "../../public/assests/menu.svg";
 import cancel from "../../public/assests/cancel.svg";
-import MobileNav from "../../components/MobileNav";
-import Navbar from "../../components/Navbar";
+
 const Blogpage = () => {
   const [show, setShow] = useState(false);
-  useEffect(() => {
-    const wid = window.innerWidth;
-  }, []);
 
-  const handleClick = () => {
-    setShow(!show);
-  };
   return (
-    <>
-      {show && <MobileNav handlingClick={handleClick} />}
-      {wid > 640 ? <Navbar /> : <></>}
+    
       <div className="w-[100vw] tracking-wide">
-        <div
-          className="absolute z-10 top-4 right-4 md:hidden"
-          onClick={handleClick}
-        >
+        <div className="absolute z-10 top-4 right-4 md:hidden">
           {show ? (
             <Image height={45} width={45} src={cancel} />
           ) : (
@@ -66,7 +54,7 @@ const Blogpage = () => {
           </div>
         </section>
       </div>
-    </>
+    
   );
 };
 

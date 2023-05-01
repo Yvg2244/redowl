@@ -18,22 +18,17 @@ import { useCallback } from "react";
 import Footer from "../components/BottomNav";
 import BottomNav from "../components/BottomNav";
 import Navbar from "../components/Navbar";
-import MobileNav from "../components/MobileNav";
+import MobileNav from "../components/Navbar";
 
 const Mainpage = () => {
   const [show, setShow] = useState(false);
-  const wid=window?.innerWidth
-  const handleClick=()=>{
-    setShow(!show)
-  }
   return (
-    <>
-      {show&&<MobileNav handlingClick={handleClick}/>}
-      {wid>640?<Navbar/>:<></>}
+   
+
       <div className="w-[100vw] h-auto tracking-wider  grid grid-cols-2">
         <div
           className="absolute z-10 top-4 right-4 md:hidden"
-          onClick={handleClick}
+      
         >
           {show ? (
             <Image height={45} width={45} src={cancel} />
@@ -201,7 +196,7 @@ const Mainpage = () => {
         </section>
         <BottomNav />
       </div>
-    </>
+   
   );
 };
 
