@@ -7,14 +7,16 @@ input {
   border-radius: 5px;
   padding: 5px 10px;
 }
-
+.b-shadow{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 button {
   border: 1px solid black;
   margin: 5px 10px;
 }
 .mainSection{
-  background: red;
-  transform: perspective(10px) rotateX(1deg);
-  margin: 50px;
-
+  background: linear-gradient(180deg, #BC4E9C 0%, #F80759 100%);
+}
+.mainSectionDiv{
+  background-image:linear-gradient(340deg,white 20%,transparent 20%)
 }

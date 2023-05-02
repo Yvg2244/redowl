@@ -10,8 +10,8 @@ import cancel from "../../public/assests/cancel.svg";
 
 const Blogpage = () => {
    return (
-    <div className="w-[100vw] tracking-wide">
-      <h2 className="w-[100vw] my-2 text-center font-bold text-[24px]">
+    <div className="w-[100vw] mt-[4rem] tracking-wide">
+      <h2 className="w-[100vw] my-6 text-center font-bold text-[24px]">
         Blogs
       </h2>
       <section className=" w-[100vw] min-h-[100vh] gap-8 justify-center items-center flex flex-col md:flex-row  ">
