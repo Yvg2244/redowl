@@ -12,7 +12,7 @@ import Navbar from "../../components/Navbar";
 const Touchpage = () => {
   return (
     <div className="w-[100vw] mt-[4rem] h-[80vh] md:grid md:grid-cols-12 tracking-wide ">
-      <div className="absolute md:hidden w-[100vh] h-[100vh] -z-10">
+      <div className="absolute md:hidden w-[100vw] h-[100vh] -z-10">
         <Image src={redBg} layout="fill" objectFit="cover" quality={100} />
       </div>
       <section className=" hidden relative md:flex items-center justify-center col-span-4">
