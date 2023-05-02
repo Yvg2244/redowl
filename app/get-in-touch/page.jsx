@@ -6,12 +6,13 @@ import redBg from "../../public/assests/redBg.svg";
 import logo from "../../public/assests/logo.svg";
 import Atsign from "../../public/assests/Atsign.png";
 import Map from "../../public/assests/Map.svg";
-import mainBg from "../../public/assests/mainBg.svg";
+
 import Ringer from "../../public/assests/Ringer.svg";
 import Navbar from "../../components/Navbar";
+import BottomNav from "../../components/BottomNav";
 const Touchpage = () => {
   return (
-    <div className="w-[100vw] mt-[4rem] h-[80vh] md:grid md:grid-cols-12 tracking-wide ">
+    <div className="w-[100vw] h-[100vh] mt-[4rem] md:grid md:grid-cols-12 tracking-wide ">
       <div className="absolute md:hidden w-[100vw] h-[100vh] -z-10">
         <Image src={redBg} layout="fill" objectFit="cover" quality={100} />
       </div>
@@ -40,14 +41,14 @@ const Touchpage = () => {
         </div>
       </section>
       <section className="col-span-8 w-full text-white md:text-black  flex flex-col justify-start items-start gap-8 p-4  ">
-        <h2 className="font-bold text-center w-full text-[24px]">
+        <h2 className="font-bold text-center w-full text-[24px] 2xl:text-[28px]">
           Get in touch
         </h2>
         <div className="flex flex-col gap-8">
           <div className="flex gap-2 flex-col">
             <label className="font-semibold">First Name</label>
             <input
-              className="border-none"
+              className=""
               type="text"
               placeholder="FirstName"
               name=""
@@ -57,7 +58,7 @@ const Touchpage = () => {
           <div className="flex gap-2 flex-col">
             <label className="font-semibold">Last Name</label>
             <input
-              className="border-none"
+              className=""
               type="text"
               placeholder="LastName"
               name=""
@@ -68,7 +69,7 @@ const Touchpage = () => {
         <div className="flex gap-2 flex-col">
           <label className="font-semibold ">Email</label>
           <input
-            className="border-none"
+            className=""
             type="email"
             placeholder="Email"
             name=""
@@ -87,11 +88,11 @@ const Touchpage = () => {
             id=""
           />
         </div>
-        <button className="bg-white md:bg-secoundry_red font-semibold text-black  md:text-white m-0 py-2 px-8 border-none rounded-md">
+        <button className="bg-white md:bg-secoundry_red font-semibold text-black  md:text-white m-0 py-2 px-8  rounded-md">
           Get In Touch
         </button>
       </section>
-      {/* <BottomNav /> */}
+      {/* <BottomNav/> */}
     </div>
   );
 };
