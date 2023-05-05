@@ -36,9 +36,9 @@ const MobileNav = () => {
           </div>
 
           {show ? (
-            <Image height={45} width={45} src={cancel} />
+            <Image className="mr-4" height={20} width={20} src={cancel} />
           ) : (
-            <Image height={45} width={45} src={menu} />
+            <Image className="mr-4" height={25} width={25} src={menu} />
           )}
         </div>
         <header className="bg-white p-[1.5rem] w-[100vw] tracking-wide items-center flex flex-col justify-between md:flex-row lg:justify-between lg:gap-4 h-[100%] md:h-[auto] lg:py-2 lg:p-4">

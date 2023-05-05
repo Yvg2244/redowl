@@ -79,7 +79,7 @@ const Touchpage = () => {
         <div className="flex gap-2 flex-col">
           <label className="font-semibold ">Your Message</label>
           <textarea
-            className="w-[90vw] md:w-[30rem] border-black rounded-lg p-2"
+            className="w-[90vw] md:w-[30rem] border-[0.5px] border-gray-300 rounded-lg p-2"
             type="textarea"
             rows="4"
             cols="40"
